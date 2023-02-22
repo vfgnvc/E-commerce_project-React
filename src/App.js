@@ -5,6 +5,7 @@ import Navbar from './componets/Navbar';
 import Cart from './pages/Cart';
 import Shop from './pages/Shop';
 import {ShopContextProvider} from './Context/ShopContext';
+import Payment from './pages/Payment';
 //import Context from '@mui/base/TabsUnstyled/TabsContext';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Shop/>} />
         <Route path='/cart' element={<Cart/>} />
+        <Route path='/payment' element={<Payment/>} />
       </Routes>
       </Router>
       </ShopContextProvider>
